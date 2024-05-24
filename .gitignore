@@ -54,3 +54,7 @@ Thumbs.db
 .vscode/
 .vs/
 node_modules/
+
+.EcoVitalAPI\appsettings.json
+
+.appsettings.json

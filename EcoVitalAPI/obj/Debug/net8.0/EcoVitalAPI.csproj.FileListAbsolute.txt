@@ -274,3 +274,4 @@ C:\Users\PC\source\repos\EcoVitalAPI\EcoVitalAPI\bin\Debug\net8.0\Microsoft.Iden
 C:\Users\PC\source\repos\EcoVitalAPI\EcoVitalAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\PC\source\repos\EcoVitalAPI\EcoVitalAPI\bin\Debug\net8.0\System.ClientModel.dll
 C:\Users\PC\source\repos\EcoVitalAPI\EcoVitalAPI\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\PC\source\repos\EcoVitalAPI\EcoVitalAPI\obj\Debug\net8.0\EcoVitalAPI.sourcelink.json

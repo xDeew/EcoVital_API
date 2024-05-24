@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcoVitalAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6467c8959dc1689f091f1cdca3009426b6d1359a")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcoVitalAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcoVitalAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
