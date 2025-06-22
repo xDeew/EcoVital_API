@@ -1,62 +1,61 @@
 # EcoVital API
 
-Bienvenido a la API de EcoVital. Esta API proporciona varios endpoints para manejar registros de actividades, feedback, preguntas de seguridad, registros de actividades de usuarios y metas de usuarios. A continuación se detalla cómo utilizar cada uno de los endpoints disponibles.
+Welcome to the EcoVital API. This API provides several endpoints to manage activity records, feedback, security questions, user activity logs, and user goals. Below you'll find details on how to use each available endpoint.
 
 ## Endpoints
 
 ### Activity
 
-- **GET /api/Activity**: Obtiene todos los registros de actividades.
-- **GET /api/Activity/{id}**: Obtiene un registro de actividad por ID.
-- **POST /api/Activity**: Crea un nuevo registro de actividad.
-- **DELETE /api/Activity/{id}**: Elimina un registro de actividad por ID. (Requiere autenticación)
+- **GET /api/Activity**: Retrieves all activity records.
+- **GET /api/Activity/{id}**: Retrieves a specific activity record by ID.
+- **POST /api/Activity**: Creates a new activity record.
+- **DELETE /api/Activity/{id}**: Deletes an activity record by ID. (Requires authentication)
 
 ### Feedback
 
-- **GET /api/Feedback**: Obtiene todos los feedbacks.
-- **GET /api/Feedback/{id}**: Obtiene un feedback por ID.
-- **POST /api/Feedback**: Crea un nuevo feedback.
-- **DELETE /api/Feedback/{id}**: Elimina un feedback por ID. (Requiere autenticación)
+- **GET /api/Feedback**: Retrieves all feedback entries.
+- **GET /api/Feedback/{id}**: Retrieves a specific feedback entry by ID.
+- **POST /api/Feedback**: Creates a new feedback entry.
+- **DELETE /api/Feedback/{id}**: Deletes a feedback entry by ID. (Requires authentication)
 
 ### Security Questions
 
-- **GET /api/SecurityQuestions**: Obtiene todas las preguntas de seguridad.
-- **GET /api/SecurityQuestions/{id}**: Obtiene una pregunta de seguridad por ID.
-- **GET /api/SecurityQuestions/GetSecurityQuestionByUserId/{userId}**: Obtiene la pregunta de seguridad por el ID del usuario.
-- **GET /api/SecurityQuestions/GetSecurityQuestionByQuestion/{questionText}/{userId}**: Obtiene una pregunta de seguridad por el texto de la pregunta y el ID del usuario.
-- **POST /api/SecurityQuestions**: Crea una nueva pregunta de seguridad.
+- **GET /api/SecurityQuestions**: Retrieves all security questions.
+- **GET /api/SecurityQuestions/{id}**: Retrieves a security question by ID.
+- **GET /api/SecurityQuestions/GetSecurityQuestionByUserId/{userId}**: Retrieves a security question by the user's ID.
+- **GET /api/SecurityQuestions/GetSecurityQuestionByQuestion/{questionText}/{userId}**: Retrieves a security question by the question text and user ID.
+- **POST /api/SecurityQuestions**: Creates a new security question.
 
 ### User Activity Records
 
-- **GET /api/UserActivityRecords**: Obtiene todos los registros de actividades de usuarios.
-- **GET /api/UserActivityRecords/{id}**: Obtiene un registro de actividad de usuario por ID.
-- **GET /api/UserActivityRecords/ByUser/{userId}**: Obtiene los registros de actividades de usuario por ID de usuario.
-- **POST /api/UserActivityRecords**: Crea un nuevo registro de actividad de usuario.
-- **PUT /api/UserActivityRecords/{id}**: Actualiza un registro de actividad de usuario por ID.
-- **DELETE /api/UserActivityRecords/{id}**: Elimina un registro de actividad de usuario por ID. (Requiere autenticación)
+- **GET /api/UserActivityRecords**: Retrieves all user activity records.
+- **GET /api/UserActivityRecords/{id}**: Retrieves a specific user activity record by ID.
+- **GET /api/UserActivityRecords/ByUser/{userId}**: Retrieves user activity records by user ID.
+- **POST /api/UserActivityRecords**: Creates a new user activity record.
+- **PUT /api/UserActivityRecords/{id}**: Updates a user activity record by ID.
+- **DELETE /api/UserActivityRecords/{id}**: Deletes a user activity record by ID. (Requires authentication)
 
 ### User Goal
 
-- **GET /api/UserGoal**: Obtiene todas las metas de usuario.
-- **GET /api/UserGoal/{id}**: Obtiene una meta de usuario por ID.
-- **GET /api/UserGoal/Activity/{activityId}**: Obtiene una meta de usuario por ID de actividad.
-- **POST /api/UserGoal**: Crea una nueva meta de usuario.
-- **POST /api/UserGoal/{userId}**: Crea una nueva meta de usuario para un usuario específico.
-- **POST /api/UserGoal/UpdateGoal**: Actualiza una meta de usuario.
-- **DELETE /api/UserGoal/{id}**: Elimina una meta de usuario por ID. (Requiere autenticación)
+- **GET /api/UserGoal**: Retrieves all user goals.
+- **GET /api/UserGoal/{id}**: Retrieves a user goal by ID.
+- **GET /api/UserGoal/Activity/{activityId}**: Retrieves a user goal by activity ID.
+- **POST /api/UserGoal**: Creates a new user goal.
+- **POST /api/UserGoal/{userId}**: Creates a new user goal for a specific user.
+- **POST /api/UserGoal/UpdateGoal**: Updates an existing user goal.
+- **DELETE /api/UserGoal/{id}**: Deletes a user goal by ID. (Requires authentication)
 
-## Notas
+## Notes
 
-- Todos los endpoints están disponibles sin necesidad de autenticación, excepto los endpoints `DELETE`, que requieren autenticación.
-- La API está documentada y accesible a través de Swagger. Puedes acceder a la documentación de Swagger navegando a la URL de Swagger en tu aplicación.
+- All endpoints are publicly accessible **except** `DELETE` endpoints, which require authentication.
+- The API is documented and accessible via Swagger. You can view the Swagger documentation by navigating to the Swagger URL of your application.
 
-## Ejemplo de Uso
+## Example Usage
 
-### Obtener todos los registros de actividades
+### Retrieve all activity records
 
 ```http
 GET /api/Activity
-
 POST /api/Activity
 Content-Type: application/json
 
@@ -64,8 +63,4 @@ Content-Type: application/json
   "name": "Running",
   "duration": 30
 }
-
-
 DELETE /api/Activity/{id}
-
-
